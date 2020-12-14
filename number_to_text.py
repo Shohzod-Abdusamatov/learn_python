@@ -1,12 +1,5 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Nov 23 22:00:52 2020
 
-@author: Shohzod
-"""
-son=input("1 dan 10^12 gacaha sonlarni kiriting!\n>>>")
-
-
+son=input()
 if son.isdigit():
     son=int(son)
     if son>0 and son<1000000000000:
@@ -23,9 +16,9 @@ if son.isdigit():
             elif qoldiq_3==2:
                 letter+="ikki yuz "
             elif qoldiq_3==3:
-                letter+="uch yuz"
+                letter+="uch yuz "
             elif qoldiq_3==4:
-                letter+="tort yuz "
+                letter+="to'rt yuz "
             elif qoldiq_3==5:
                 letter+="besh yuz "
             elif qoldiq_3==6:
@@ -100,11 +93,7 @@ if son.isdigit():
         yuz=son%1000
         yuzlar(yuz,letter,"")
 
-    else:
-        print("qiymat notogri kiritildi")
-else:
-    print("Son kiritng")
-print(letter)
+print(letter.strip())
 
 
 
